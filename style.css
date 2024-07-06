@@ -1,3 +1,11 @@
+:root {
+  --color-background: lavenderblush;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: darkslategray;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -20,10 +28,8 @@ p {
   }
 }
 code {
-  background-color: DarkSlateGrey;
+  background-color: var(--color-background);
 }
 html {
-  background-color: black;
-  color: white;
   font-size: 100%;
 }
