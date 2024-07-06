@@ -15,7 +15,15 @@
         change and if it does, we have to find all the spots where this number
         was used. In some cases the code might be written like this though:
         <code>const total = sum * 19 / 100</code>. So we would miss it if we
-        searched the document for <i>1.19</i>.
+        searched the document for <i>1.19</i>. In this context most developers
+        would recognize what the number 19 means. But it could also be something
+        like this original piece of code from the source of
+        <i>Quake III Arena</i>:
+        <code> i = 0x5f3759df - ( i >> 1 ); // what the fuck?</code>
+        <a href="https://en.wikipedia.org/wiki/Fast_inverse_square_root"
+          >(read more)</a
+        >
+        The comment at the end is telling.
       </p>
     </main>
   </body>
